@@ -1,5 +1,4 @@
 def registry = 'https://sameera7268.jfrog.io/'
-
 pipeline {
     agent {
         node {
@@ -7,7 +6,7 @@ pipeline {
         }
     }
 environment {
-    PATH = "/opt/apache-maven-3.9.6/bin:$PATH"
+    PATH = "/opt/apache-maven-3.9.2/bin:$PATH"
 }
     stages {
         stage("build"){
@@ -44,9 +43,9 @@ environment {
       error "Pipeline aborted due to quality gate failure: ${qg.status}"
     }
   }
-}*/
+}
     }
-  }
+  }*/
          stage("Jar Publish") {
         steps {
             script {
@@ -72,4 +71,5 @@ environment {
             }
         }   
     }   
+}
 }
