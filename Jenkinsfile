@@ -1,5 +1,5 @@
 def registry = 'https://sameera7268.jfrog.io/'
-def imageName = 'sameera7268.jfrog.io/sameera-docker/ttrend'
+def imageName = 'sameera7268.jfrog.io/pujitha-docker/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent {
