@@ -17,7 +17,7 @@ spec:
       - name: jfrog-art-cred
       containers:
       - name:  valaxy-rtp
-        image: sameera7268.jfrog.io/divya-docker/divya:2.1.2
+        image: sameera7268.jfrog.io/divya-docker/divya:2.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 8000

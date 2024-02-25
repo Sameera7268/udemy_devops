@@ -1,6 +1,6 @@
 def registry = 'https://sameera7268.jfrog.io/'
 def imageName = 'sameera7268.jfrog.io/divya-docker-local/divya'
-def version   = '2.1.2'
+def version   = '2.1.3'
 pipeline {
     agent {
         node {
