@@ -62,7 +62,7 @@ environment {
       }
     }
 
-            stage (" Docker Publish "){
+    stage (" Docker Publish "){
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
@@ -75,9 +75,9 @@ environment {
     } 
 
     stage("Deploy")
-    steps {
-        script {
-            sh './deploy.sh'
+        steps {
+            script {
+                 sh './deploy.sh'
         }
     }
 }
