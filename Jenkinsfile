@@ -1,4 +1,4 @@
-//def registry = 'https://sameera7268.jfrog.io/'
+def registry = 'https://bhavya7268.jfrog.io/'
 //def imageName = 'sameera7268.jfrog.io/divya-docker-local/divya'
 //def version   = '2.1.3'
 pipeline {
@@ -26,7 +26,7 @@ environment {
             }
         }
 
-    /*       stage("Jar Publish") {
+    /      stage("Jar Publish") {
         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
@@ -36,7 +36,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "sameera_maven-libs-release/{1}",
+                              "target": "maven-libs-release/{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
@@ -52,7 +52,7 @@ environment {
         }   
     }  
     
-    stage(" Docker Build ") {
+   /* stage(" Docker Build ") {
       steps {
         script {
            echo '<--------------- Docker Build Started --------------->'
