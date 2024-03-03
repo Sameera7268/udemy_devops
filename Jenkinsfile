@@ -1,6 +1,6 @@
-def registry = 'https://sameera7268.jfrog.io/'
-def imageName = 'sameera7268.jfrog.io/divya-docker-local/divya'
-def version   = '2.1.3'
+//def registry = 'https://sameera7268.jfrog.io/'
+//def imageName = 'sameera7268.jfrog.io/divya-docker-local/divya'
+//def version   = '2.1.3'
 pipeline {
     agent {
         node {
@@ -26,7 +26,7 @@ environment {
             }
         }
 
-           stage("Jar Publish") {
+    /*       stage("Jar Publish") {
         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
@@ -80,6 +80,6 @@ environment {
                  sh './deploy.sh'
         }
      }
-  }
+  }*/
 }
 }
